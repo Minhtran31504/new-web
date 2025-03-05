@@ -1,0 +1,118 @@
+/* Import font từ Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+/* Reset mặc định */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+    text-align: center;
+}
+
+/* Hình ảnh siêu thị */
+.supermarket img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Phần đánh giá khách hàng */
+.reviews {
+    padding: 50px 20px;
+}
+
+.reviews h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Container chứa tất cả đánh giá */
+.review-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Mỗi ô đánh giá */
+.review-card {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 350px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Ảnh khách hàng */
+.review-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 3px solid white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Tên khách hàng */
+.review-card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* Nội dung đánh giá */
+.review-card p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Biểu tượng dấu quote */
+.quotes {
+    font-size: 24px;
+    color: #ddd;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.quotes i {
+    font-size: 32px;
+    color: #888;
+}
+
+/* Biểu tượng sao */
+.stars {
+    color: #FFD700; /* Màu vàng */
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* Căn chỉnh icon sao cho đều */
+.stars i {
+    font-size: 22px; /* Chỉnh kích thước icon */
+    margin: 0 2px; /* Giữ khoảng cách giữa các icon */
+}
+
+
+/* Kiểm tra để đảm bảo FontAwesome hoạt động */
+@media (max-width: 768px) {
+    .review-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}

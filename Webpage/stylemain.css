@@ -1,0 +1,180 @@
+*, *::before, *::after {
+    box-sizing: border-box; /* Bao gồm padding và border trong chiều rộng/cao */
+}
+
+body {
+    font-family: 'Arial', sans-serif; /* Rút gọn font-family */
+    margin: 0;
+    padding: 0; /* Loại bỏ padding mặc định */
+    line-height: 1.6; /* Cải thiện khả năng đọc */
+    color: white; /* Màu chữ mặc định dễ đọc */
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header {
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem 1.5rem; /* Kết hợp padding vào .header */
+}
+
+.header .logo img {
+    max-height: 60px;
+}
+
+.header .search-box {
+    flex-grow: 1;
+    margin: 0 1.5rem;
+    position: relative;
+}
+
+.header .search-box input {
+    width: 100%;
+    border: 1px solid #e2e8f0;
+    border-radius: 2rem;
+    padding: 0.5rem 1rem 0.5rem 2.5rem;
+}
+
+.header .search-box i {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #a0aec0;
+}
+
+.header .user-actions a {
+    color: #343a40;
+    margin-left: 1rem;
+    text-decoration: none;
+}
+.nav {
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 1.5rem; /* Kết hợp padding vào .nav */
+    text-align: center; /* Căn giữa các liên kết */
+}
+
+.nav a {
+    color: #343a40;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+.nav a.active {
+    color: #38a169;
+}
+.main {
+    padding: 2rem 0; /* Thêm padding cho phần main */
+}
+
+.main .container {
+    display: flex;
+    flex-direction: column; /* Thay đổi hướng flex mặc định */
+    align-items: center;
+}
+
+.main .content {
+    text-align: center; /* Căn giữa nội dung văn bản */
+    margin-bottom: 2rem;
+}
+
+.main .logo-main {
+    max-height: 50px;
+    margin-bottom: 1rem;
+}
+
+.main h2 {
+    font-size: 2.5rem; /* Tăng kích thước tiêu đề */
+    font-weight: 600; /* Thay đổi độ đậm */
+    margin-bottom: 1rem;
+}
+
+.main p {
+    font-style: italic;
+    margin-bottom: 1.5rem;
+}
+
+.main .shop-now {
+    background-color: #28a745;
+    color: white;
+    padding: 0.75rem 1.5rem; /* Tăng padding nút */
+    border-radius: 2rem;
+    text-decoration: none;
+}
+
+.main .food-image {
+    max-width: 100%;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+@media (min-width: 1024px) {
+    .main .container {
+        flex-direction: row; /* Thay đổi hướng flex thành hàng */
+        align-items: center;
+    }
+
+    .main .content {
+        text-align: left; /* Trả lại căn trái cho nội dung văn bản */
+        margin-right: 2rem;
+    }
+
+    .main .food-image {
+        max-width: 700px;
+    }
+}
+.full-screen-image {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.imported {
+    display: flex; /* Sử dụng flexbox để các phần tử nằm trên cùng một dòng */
+    align-items: center; /* Căn chỉnh các phần tử theo chiều dọc */
+}
+
+.green-bold {
+    color: #28a745; /* Hoặc #008000 hoặc #006400 (xanh lá cây đậm) */
+    font-weight: bold;
+    margin-right: 5px; /* Thêm khoảng cách giữa hai span */
+}
+
+.white-bold {
+    color: white; /* Hoặc bất kỳ màu trắng nào bạn muốn */
+    font-weight: bold;
+}
+
+.main .shop-now {
+    /* ... (các thuộc tính CSS hiện tại) ... */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Thêm transition */
+}
+
+.main .shop-now:hover {
+    background-color: #1e7e34; /* Màu nền đậm hơn khi hover */
+    transform: scale(1.05); /* Phóng to nút khi hover */
+}
+
+.nav a {
+    /* ... (các thuộc tính CSS hiện tại) ... */
+    transition: color 0.3s ease; /* Thêm transition */
+}
+
+.nav a:hover {
+    color: #218838; /* Màu xanh lá cây đậm hơn khi hover */
+}

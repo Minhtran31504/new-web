@@ -1,0 +1,187 @@
+  body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  }
+  .container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  }
+  /* Latest News Section */
+  .latest-news {
+  padding: 20px 0;
+  text-align: center;
+  }
+  .latest-news h2 {
+  color: #333;
+  margin-bottom: 20px;
+  }
+  .news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  }
+  .news-item {
+  background: #f4f4f4;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative; /* Make news-item a positioning context */
+  }
+  .news-item img {
+  width: 307.7px;
+  height: 397.9px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  }
+  .news-item h3 {
+  color: #333;
+  margin-bottom: 5px;
+  }
+  .news-item p {
+  color: #666;
+  font-size: 0.9em;
+  }
+  .news-item a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #007bff;
+  text-decoration: none;
+  }
+   /* Footer Styles */
+   footer {
+    background-color: #3CB371;
+    color: white;
+    padding: 20px 0;
+    text-align: left;
+   }
+   footer .container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 20px;
+   }
+   footer h3 {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+   }
+   footer ul {
+    list-style: none;
+    padding: 0;
+   }
+   footer ul li {
+    margin-bottom: 5px;
+   }
+   footer a {
+    color: white;
+    text-decoration: none;
+   }
+   footer a:hover {
+    text-decoration: underline;
+   }
+   footer p {
+    margin: 0;
+   }
+   .footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    margin-top: 20px;
+   }
+   footer .container {
+  display: flex;
+  justify-content: space-between; /* Điều này sẽ loại bỏ khoảng cách giữa các cột */
+}
+
+footer .container > div {
+  flex: 1; /* Chia đều không gian giữa các cột */
+  margin-right: 20px; /* Thêm khoảng cách bên phải mỗi cột */
+}
+
+/* Loại bỏ margin-right ở cột cuối cùng */
+footer .container > div:last-child {
+  margin-right: 0;
+}
+
+footer .container .social-media img {
+  width: 49.77px;
+  height: 60.79px;
+}
+   /* Social Media Icons */
+   .social-media {
+    margin-top: 10px;
+   }
+   .social-media a {
+    display: inline-block;
+    margin-right: 10px;
+    color: white;
+    font-size: 1.2em;
+   }
+   /* Contact Info */
+   .contact-info p {
+    margin-bottom: 5px;
+	
+   }
+   /* Date Labels */
+   .date-label {
+    position: relative;
+    display: inline-block;
+   }
+   .date-label::before {
+    content: attr(data-date);
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    background-color: rgba(0, 128, 0, 0.7);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.75em;
+   }
+   /* Responsive adjustments */
+   @media (max-width: 768px) {
+    .container {
+     width: 95%;
+    }
+    footer .container {
+     grid-template-columns: 1fr;
+     text-align: center;
+    }
+    .social-media {
+     text-align: center;
+    }
+   }
+   /* Payment icon dimensions */
+   footer .contact-info img {
+	width: 38.34px;
+	height: 22.32px; 
+	border-right-width: 20px;
+   }
+   /* Contact Info Icons */
+   .contact-info p:nth-child(1)::before {
+    content: "phone icon";
+    margin-right: 5px;
+   }
+   .contact-info p:nth-child(2)::before {
+    content: "email icon";
+    margin-right: 5px;
+   }
+   /* 8market image replacement */
+   footer>div>h3 {
+    width: 136px;
+    height: 78px;
+    background-image: url('logo.png');
+    /* Đường dẫn đến hình ảnh của bạn */
+    text-indent: -9999px;
+    /* Ẩn chữ "8market" */
+    overflow: hidden;
+   }
+   .news-item {
+    background: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+   }

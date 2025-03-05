@@ -1,0 +1,253 @@
+/* Reset cơ bản */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: white;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Header */
+.header {
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 0.8rem 1rem; /* Giảm padding để phù hợp với mobile */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.header .logo img {
+    max-height: 50px; /* Giảm kích thước logo */
+}
+
+.header .search-box {
+    width: 100%;
+    margin: 0.5rem 0;
+    position: relative;
+}
+
+.header .search-box input {
+    width: 100%;
+    border: 1px solid #e2e8f0;
+    border-radius: 2rem;
+    padding: 0.5rem 1rem 0.5rem 2.5rem;
+}
+
+.header .search-box i {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #a0aec0;
+}
+
+.header .user-actions {
+    display: flex;
+    gap: 0.8rem;
+}
+
+.header .user-actions a {
+    color: #343a40;
+    text-decoration: none;
+}
+
+/* Navigation */
+.nav {
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nav a {
+    color: #343a40;
+    margin: 0.5rem;
+    text-decoration: none;
+    font-size: 14px; /* Giảm kích thước chữ */
+}
+
+.nav a.active {
+    color: #38a169;
+}
+
+/* Main Content */
+.main {
+    padding: 1.5rem 0;
+}
+
+.main .container {
+    display: flex;
+    flex-direction: column; /* Chỉnh về dạng cột trên mobile */
+    align-items: center;
+    text-align: center;
+}
+
+.main .content {
+    margin-bottom: 1.5rem;
+}
+
+.main .logo-main {
+    max-height: 40px;
+    margin-bottom: 1rem;
+}
+
+.main h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.main p {
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.main .shop-now {
+    background-color: #28a745;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.main .shop-now:hover {
+    background-color: #1e7e34;
+    transform: scale(1.05);
+}
+
+/* Hình ảnh sản phẩm */
+.main .food-image {
+    max-width: 100%;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hình nền toàn màn hình */
+.full-screen-image {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* Điều chỉnh nội dung hero */
+.hero-content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+/* Import Section */
+.imported {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.green-bold {
+    color: #28a745;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.white-bold {
+    color: white;
+    font-weight: bold;
+}
+
+/* Media Queries - Tối ưu hóa trên Mobile */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header .search-box {
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+
+    .header .user-actions {
+        justify-content: center;
+        margin-top: 0.5rem;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav a {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    .main .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main h2 {
+        font-size: 1.8rem;
+    }
+
+    .main .shop-now {
+        font-size: 14px;
+        padding: 0.6rem 1rem;
+    }
+
+    .main .food-image {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .main h2 {
+        font-size: 1.6rem;
+    }
+
+    .main .shop-now {
+        font-size: 13px;
+        padding: 0.5rem 1rem;
+    }
+
+    .header .search-box input {
+        padding: 0.5rem 1rem;
+        font-size: 14px;
+    }
+
+    .nav a {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chi tiết sản phẩm</title>
+  <link rel="stylesheet" href="check.css">
+</head>
+<body>
+  <div class="container">
+    <a href="page 2.html" class="back-button">← Quay lại trang sản phẩm</a>
+    <div id="default-view" class="product-detail">
+      <div class="not-found">
+        <h2>Vui lòng chọn một sản phẩm</h2>
+        <p>Hãy chọn sản phẩm từ trang chủ để xem chi tiết</p>
+      </div>
+    </div>
+    <div id="not-found" class="not-found">
+      <h2>Không tìm thấy sản phẩm</h2>
+      <p>Sản phẩm bạn đang tìm kiếm không tồn tại hoặc đã bị xóa.</p>
+    </div>
+    
+    <!-- Đùi cừu product detail -->
+    <div id="duicuu" class="product-detail">
+      <div class="product-image">
+        <img src="https://images.unsplash.com/photo-1608877907149-a206d75ba011?q=80&w=1374&auto=format&fit=crop" alt="Đùi cừu" class="main-image">
+      </div>
+      <div class="product-info">
+        <div class="product-category">Meat</div>
+        <h1 class="product-title">Đùi cừu</h1>
+        <div class="product-rating">⭐⭐⭐⭐ <span>(4.5)</span></div>
+        <div class="product-price">$12.99/pound</div>
+        
+        <div class="product-description">
+          <p>Đùi cừu tươi ngon, được nhập khẩu trực tiếp từ trang trại hữu cơ New Zealand. Thịt cừu mềm, ngọt, có hương vị đặc trưng và giàu dinh dưỡng. Phù hợp cho các món nướng, hầm hoặc om với rau củ.</p>
+        </div>
+        
+        <div class="product-specs">
+          <h3>Thông số sản phẩm</h3>
+          <div class="spec-item">
+            <div class="spec-label">Nguồn gốc:</div>
+            <div class="spec-value">Nhập khẩu</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Bảo quản:</div>
+            <div class="spec-value">2°C đến 4°C</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Hạn sử dụng:</div>
+            <div class="spec-value">7 ngày kể từ ngày sản xuất</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Hướng dẫn sử dụng:</div>
+            <div class="spec-value">Chế biến kỹ trước khi sử dụng</div>
+          </div>
+        </div>
+        
+        <form class="add-to-cart-form" action="cart.html" method="get">
+          <input type="hidden" name="product" value="duicuu">
+          <div class="quantity-selector">
+            <span>Số lượng:</span>
+            <div class="quantity-value">1</div>
+          </div>
+          <button class="add-to-cart">Thêm vào giỏ hàng</button>
+        </form>
+      </div>
+    </div>
+    <!-- Similar products for Đùi cừu -->
+    <div class="similar-products" id="similar-products-duicuu">
+      <h2>Sản phẩm tương tự</h2>
+      <div class="similar-grid">
+        <a href="popup.html#suoncuu" class="similar-item">
+          <img src="C:\Lập trình Web\Midterm\Ảnh\Thịt\Lamb chop.png"alt="Sườn cừu">
+          <div class="similar-info">
+            <div class="similar-name">Sườn cừu</div>
+            <div class="similar-price">$14.99/pound</div>
+          </div>
+        </a>
+        <a href="popup.html#thanlungcuu" class="similar-item">
+          <img src="https://images.unsplash.com/photo-1603360946369-dc9bb6258143?q=80&w=1470&auto=format&fit=crop" alt="Thăn lưng cừu">
+          <div class="similar-info">
+            <div class="similar-name">Thăn lưng cừu</div>
+            <div class="similar-price">$16.99/pound</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  
+    <!-- Dừa sáp Long ThànhThành product detail -->
+    <div id="duasap" class="product-detail">
+      <div class="product-image">
+        <img src="https://cdn.tgdd.vn/2021/03/CookProduct/9-1200x676.jpg" alt="Dừa sáp Long Thành" class="main-image">
+      </div>
+      <div class="product-info">
+        <div class="product-category">Fruit</div>
+        <h1 class="product-title">Dừa sáp Long Thành</h1>
+        <div class="product-rating">⭐⭐⭐⭐ <span>(3.9)</span></div>
+        <div class="product-price">$5.8/pound</div>
+        
+        <div class="product-description">
+          <p>Dừa sáp Long Thành là loại dừa đặc sản với cơm dày, dẻo, béo ngậy và nước sệt, thích hợp để ăn tươi hoặc chế biến món tráng miệng.</p>
+        </div>
+        
+        <div class="product-specs">
+          <h3>Thông số sản phẩm</h3>
+          <div class="spec-item">
+            <div class="spec-label">Nguồn gốc:</div>
+            <div class="spec-value">Thành Phố Hồ Chí Minh</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Bảo quản:</div>
+            <div class="spec-value">Nơi khô ráo, thoáng mát</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Hạn sử dụng:</div>
+            <div class="spec-value">Không quá 5 ngày kể từ ngày thu hoạch</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Hướng dẫn sử dụng:</div>
+            <div class="spec-value">Chế biến với các món chè hoặc ăn trực tiếp</div>
+          </div>
+        </div>
+        
+        <form class="add-to-cart-form" action="cart.html" method="get">
+          <input type="hidden" name="product" value="duicuu">
+          <div class="quantity-selector">
+            <span>Số lượng:</span>
+            <div class="quantity-value">1</div>
+          </div>
+          <button class="add-to-cart">Thêm vào giỏ hàng</button>
+        </form>
+      </div>
+    </div>
+    <!-- Similar products for Dừa sáp -->
+    <div class="similar-products" id="similar-products-duasap">
+      <h2>Sản phẩm tương tự</h2>
+      <div class="similar-grid">
+        <a href="popup.html#dautam" class="similar-item">
+          <img src="C:\Lập trình Web\Midterm\Ảnh\Quả + gia vị\Dâu tằm.png" alt="Dâu tằm">
+          <div class="similar-info">
+            <div class="similar-name">Dâu tằm nhiệt đới</div>
+            <div class="similar-price">$14.99/pound</div>
+          </div>
+        </a>
+        <a href="popup.html#thanlungcuu" class="similar-item">
+          <img src="https://images.unsplash.com/photo-1603360946369-dc9bb6258143?q=80&w=1470&auto=format&fit=crop" alt="Thăn lưng cừu">
+          <div class="similar-info">
+            <div class="similar-name">Thăn lưng cừu</div>
+            <div class="similar-price">$16.99/pound</div>
+          </div>
+        </a>
+      </div>
+    </div>
+      
+    <!-- Đùi heo muối product detail -->
+    <div id="duiheomuoi" class="product-detail">
+      <div class="product-image">
+        <img src="https://images.unsplash.com/photo-1591386767153-987783380885?q=80&w=1374&auto=format&fit=crop" alt="Đùi heo muối" class="main-image">
+      </div>
+      <div class="product-info">
+        <div class="product-category">Meat</div>
+        <h1 class="product-title">Đùi heo muối</h1>
+        <div class="product-rating">⭐⭐⭐⭐ <span>(4.2)</span></div>
+        <div class="product-price">$9.99/pound</div>
+        
+        <div class="product-description">
+          <p>Đùi heo muối chế biến theo công thức truyền thống châu Âu, ướp muối và hun khói tự nhiên trong thời gian dài. Thịt có màu đỏ hồng đẹp mắt, hương vị đậm đà và độ mặn vừa phải.</p>
+        </div>
+        
+        <div class="product-specs">
+          <h3>Thông số sản phẩm</h3>
+          <div class="spec-item">
+            <div class="spec-label">Nguồn gốc:</div>
+            <div class="spec-value">Nhập khẩu</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Bảo quản:</div>
+            <div class="spec-value">2°C đến 4°C</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Hạn sử dụng:</div>
+            <div class="spec-value">30 ngày kể từ ngày sản xuất</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Hướng dẫn sử dụng:</div>
+            <div class="spec-value">Có thể ăn trực tiếp hoặc chế biến</div>
+          </div>
+        </div>
+        
+        <form class="add-to-cart-form" action="cart.html" method="get">
+          <input type="hidden" name="product" value="duiheomuoi">
+          <div class="quantity-selector">
+            <span>Số lượng:</span>
+            <div class="quantity-value">1</div>
+          </div>
+          <button class="add-to-cart">Thêm vào giỏ hàng</button>
+        </form>
+      </div>
+    </div>
+    <!-- Similar products for Đùi heo muối -->
+    <div class="similar-products" id="similar-products-duiheomuoi">
+      <h2>Sản phẩm tương tự</h2>
+      <div class="similar-grid">
+        <a href="popup.html#salami" class="similar-item">
+          <img src="https://images.unsplash.com/photo-1626082896492-766af4eb6501?q=80&w=1470&auto=format&fit=crop" alt="Salami">
+          <div class="similar-info">
+            <div class="similar-name">Salami</div>
+            <div class="similar-price">$7.99/pound</div>
+          </div>
+        </a>
+      </div>
+    </div>
+    
+    <!-- Dâu tằm nhiệt đới production detail -->
+    <div id="dautam" class="product-detail">
+      <div class="product-image">
+        <img src="C:\Lập trình Web\Midterm\Ảnh\Quả + gia vị\Dâu tằm.png" alt="Dâu tằm nhiệt đới" class="main-image">
+      </div>
+      <div class="product-info">
+        <div class="product-category">Fruit</div>
+        <h1 class="product-title">Dâu tằm nhiệt đới</h1>
+        <div class="product-rating">⭐⭐⭐⭐ <span>(3.2)</span></div>
+        <div class="product-price">$2.3/pound</div>
+        
+        <div class="product-description">
+          <p>Dâu tằm tươi mọng, chua ngọt tự nhiên, giàu dinh dưỡng – hoàn hảo để ăn trực tiếp, làm nước ép hoặc mứt thơm ngon!</p>
+        </div>
+        
+        <div class="product-specs">
+          <h3>Thông số sản phẩm</h3>
+          <div class="spec-item">
+            <div class="spec-label">Nguồn gốc:</div>
+            <div class="spec-value">Philipines</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Bảo quản:</div>
+            <div class="spec-value">Nhiệt độ mát, tránh ánh nắng trực tiếp</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Hạn sử dụng:</div>
+            <div class="spec-value">1 tuần</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Hướng dẫn sử dụng:</div>
+            <div class="spec-value">Ăn trực tiếp, ngon hơn khi dùng lạnh</div>
+          </div>
+        </div>
+        
+        <form class="add-to-cart-form" action="cart.html" method="get">
+          <input type="hidden" name="product" value="duicuu">
+          <div class="quantity-selector">
+            <span>Số lượng:</span>
+            <div class="quantity-value">1</div>
+          </div>
+          <button class="add-to-cart">Thêm vào giỏ hàng</button>
+        </form>
+      </div>
+    </div>
+    <!-- Similar products for Dâu tằm -->
+    <div class="similar-products" id="similar-products-dautam">
+      <h2>Sản phẩm tương tự</h2>
+      <div class="similar-grid">
+        <a href="popup.html#duasap" class="similar-item">
+          <img src="https://cdn.tgdd.vn/2021/03/CookProduct/9-1200x676.jpg" alt="Dừa sáp Long Thành">
+          <div class="similar-info">
+            <div class="similar-name">Dừa sáp Long Thành</div>
+            <div class="similar-price">$5.8/pound</div>
+          </div>
+        </a>
+        <a href="popup.html#thanbothanbo" class="similar-item">
+          <img src="C:\Lập trình Web\Midterm\Ảnh\Thịt\phần thăn bò (ff).png"  alt="Thăn bò">
+          <div class="similar-info">
+            <div class="similar-name">Thăn bò Úc</div>
+            <div class="similar-price">$15.5050/pound</div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- Dâu tây Sơn LaLa production detail -->
+    <div id="dautay" class="product-detail">
+      <div class="product-image">
+        <img src="https://images.unsplash.com/photo-1464965911861-746a04b4bca6?q=80&w=1470&auto=format&fit=crop" alt="Dâu tây Sơn La" class="main-image">
+      </div>
+      <div class="product-info">
+        <div class="product-category">Fruits</div>
+        <h1 class="product-title">Dâu tây Sơn La</h1>
+        <div class="product-rating">⭐⭐⭐⭐ <span>(4.3)</span></div>
+        <div class="product-price">$4.99/pound</div>
+        
+        <div class="product-description">
+          <p>Dâu tây Sơn La tươi ngon, được trồng tại vùng cao nguyên với khí hậu lý tưởng. Quả to, đỏ tươi, vị ngọt thanh với độ chua nhẹ. Giàu vitamin C và chất chống oxy hóa.</p>
+        </div>
+        
+        <div class="product-specs">
+          <h3>Thông số sản phẩm</h3>
+          <div class="spec-item">
+            <div class="spec-label">Nguồn gốc:</div>
+            <div class="spec-value">Việt Nam</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Bảo quản:</div>
+            <div class="spec-value">Nhiệt độ mát 5°C đến 10°C</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Hạn sử dụng:</div>
+            <div class="spec-value">5-7 ngày ở nhiệt độ mát</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Hướng dẫn sử dụng:</div>
+            <div class="spec-value">Rửa sạch trước khi ăn</div>
+          </div>
+        </div>
+        
+        <form class="add-to-cart-form" action="cart.html" method="get">
+          <input type="hidden" name="product" value="dautay">
+          <div class="quantity-selector">
+            <span>Số lượng:</span>
+            <div class="quantity-value">1</div>
+          </div>
+          <button class="add-to-cart">Thêm vào giỏ hàng</button>
+        </form>
+      </div>
+    </div>
+    <!-- Similar products for Dâu tây -->
+    <div class="similar-products" id="similar-products-dautay">
+      <h2>Sản phẩm tương tự</h2>
+      <div class="similar-grid">
+        <a href="popup.html#nhoxanh" class="similar-item">
+          <img src="https://images.unsplash.com/photo-1537640538966-79f369143f8f?q=80&w=1473&auto=format&fit=crop" alt="Nho xanh Hàn Quốc">
+          <div class="similar-info">
+            <div class="similar-name">Nho xanh Hàn Quốc</div>
+            <div class="similar-price">$3.99/pound</div>
+          </div>
+        </a>
+      </div>
+    </div>
+    
+    <!-- Phần thăn bò product detail -->
+    <div id="thanbo" class="product-detail">
+      <div class="product-image">
+        <img src="https://images.unsplash.com/photo-1613454320447-98affd88f197?q=80&w=1470&auto=format&fit=crop" alt="Phần thăn bò" class="main-image">
+      </div>
+      <div class="product-info">
+        <div class="product-category">Meat</div>
+        <h1 class="product-title">Phần thăn bò</h1>
+        <div class="product-rating">⭐⭐⭐⭐⭐ <span>(4.7)</span></div>
+        <div class="product-price">$15.50/pound</div>
+        
+        <div class="product-description">
+          <p>Thăn bò cao cấp với vân mỡ đẹp, thịt mềm và hương vị đậm đà. Được lấy từ phần thịt lưng của bò, đây là phần thịt được ưa chuộng nhất, phù hợp cho các món nướng hoặc áp chảo.</p>
+        </div>
+        
+        <div class="product-specs">
+          <h3>Thông số sản phẩm</h3>
+          <div class="spec-item">
+            <div class="spec-label">Nguồn gốc:</div>
+            <div class="spec-value">Nhập khẩu</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Bảo quản:</div>
+            <div class="spec-value">2°C đến 4°C</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Hạn sử dụng:</div>
+            <div class="spec-value">7 ngày kể từ ngày sản xuất</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Hướng dẫn sử dụng:</div>
+            <div class="spec-value">Chế biến kỹ trước khi sử dụng</div>
+          </div>
+        </div>
+        
+        <form class="add-to-cart-form" action="cart.html" method="get">
+          <input type="hidden" name="product" value="thanbo">
+          <div class="quantity-selector">
+            <span>Số lượng:</span>
+            <div class="quantity-value">1</div>
+          </div>
+          <button class="add-to-cart">Thêm vào giỏ hàng</button>
+        </form>
+      </div>
+    </div>
+    <!-- Similar products for Phần thăn bò -->
+    <div class="similar-products" id="similar-products-thanbo">
+      <h2>Sản phẩm tương tự</h2>
+      <div class="similar-grid">
+        <a href="popup.html#thitucbo" class="similar-item">
+          <img src="https://images.unsplash.com/photo-1600180758890-6b94519a8ba6?q=80&w=1470&auto=format&fit=crop" alt="Thịt ức bò">
+          <div class="similar-info">
+            <div class="similar-name">Thịt ức bò</div>
+            <div class="similar-price">$11.99/pound</div>
+          </div>
+        </a>
+        <a href="popup.html#thitvaibo" class="similar-item">
+          <img src="https://images.unsplash.com/photo-1551198297-094dd118827b?q=80&w=1470&auto=format&fit=crop" alt="Thịt vai bò">
+          <div class="similar-info">
+            <div class="similar-name">Thịt vai bò</div>
+            <div class="similar-price">$13.49/pound</div>
+          </div>
+        </a>
+      </div>
+    </div>
+    
+    <!-- Salami product detail -->
+    <div id="salami" class="product-detail">
+      <div class="product-image">
+        <img src="https://images.unsplash.com/photo-1626082896492-766af4eb6501?q=80&w=1470&auto=format&fit=crop" alt="Salami" class="main-image">
+      </div>
+      <div class="product-info">
+        <div class="product-category">Meat</div>
+        <h1 class="product-title">Salami</h1>
+        <div class="product-rating">⭐⭐⭐⭐ <span>(4.1)</span></div>
+        <div class="product-price">$7.99/pound</div>
+        
+        <div class="product-description">
+          <p>Salami được làm từ thịt heo và thịt bò thượng hạng, ướp với các loại gia vị theo công thức Ý. Sản phẩm được lên men tự nhiên tạo ra hương vị đặc trưng và bảo quản lâu.</p>
+        </div>
+        
+        <div class="product-specs">
+          <h3>Thông số sản phẩm</h3>
+          <div class="spec-item">
+            <div class="spec-label">Nguồn gốc:</div>
+            <div class="spec-value">Nhập khẩu Ý</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Bảo quản:</div>
+            <div class="spec-value">5°C đến 10°C</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Hạn sử dụng:</div>
+            <div class="spec-value">60 ngày kể từ ngày sản xuất</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Hướng dẫn sử dụng:</div>
+            <div class="spec-value">Có thể ăn trực tiếp hoặc kết hợp với bánh mì, pizza</div>
+          </div>
+        </div>
+        
+        <form class="add-to-cart-form" action="cart.html" method="get">
+          <input type="hidden" name="product" value="salami">
+          <div class="quantity-selector">
+            <span>Số lượng:</span>
+            <div class="quantity-value">1</div>
+          </div>
+          <button class="add-to-cart">Thêm vào giỏ hàng</button>
+        </form>
+      </div>
+    </div>
+    <!-- Similar products for Salami -->
+    <div class="similar-products" id="similar-products-salami">
+      <h2>Sản phẩm tương tự</h2>
+      <div class="similar-grid">
+        <a href="popup.html#duiheomuoi" class="similar-item">
+          <img src="https://images.unsplash.com/photo-1591386767153-987783380885?q=80&w=1374&auto=format&fit=crop" alt="Đùi heo muối">
+          <div class="similar-info">
+            <div class="similar-name">Đùi heo muối</div>
+            <div class="similar-price">$9.99/pound</div>
+          </div>
+        </a>
+      </div>
+    </div>
+    
+    <!-- Sườn cừu product detail -->
+    <div id="suoncuu" class="product-detail">
+      <div class="product-image">
+        <img src="https://images.unsplash.com/photo-1628268909376-e8c28097e8b6?q=80&w=1470&auto=format&fit=crop" alt="Sườn cừu" class="main-image">
+      </div>
+      <div class="product-info">
+        <div class="product-category">Meat</div>
+        <h1 class="product-title">Sườn cừu</h1>
+        <div class="product-rating">⭐⭐⭐⭐⭐ <span>(4.6)</span></div>
+        <div class="product-price">$14.99/pound</div>
+        
+        <div class="product-description">
+          <p>Sườn cừu tươi ngon với lớp mỡ vừa phải, thích hợp cho các món nướng hoặc áp chảo. Thịt mềm, ngọt với hương vị đặc trưng của cừu non.</p>
+        </div>
+        
+        <div class="product-specs">
+          <h3>Thông số sản phẩm</h3>
+          <div class="spec-item">
+            <div class="spec-label">Nguồn gốc:</div>
+            <div class="spec-value">Nhập khẩu New Zealand</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Bảo quản:</div>
+            <div class="spec-value">2°C đến 4°C</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Hạn sử dụng:</div>
+            <div class="spec-value">7 ngày kể từ ngày sản xuất</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Hướng dẫn sử dụng:</div>
+            <div class="spec-value">Chế biến kỹ trước khi sử dụng</div>
+          </div>
+        </div>
+        
+        <form class="add-to-cart-form" action="cart.html" method="get">
+          <input type="hidden" name="product" value="suoncuu">
+          <div class="quantity-selector">
+            <span>Số lượng:</span>
+            <div class="quantity-value">1</div>
+          </div>
+          <button class="add-to-cart">Thêm vào giỏ hàng</button>
+        </form>
+      </div>
+    </div>
+    <!-- Similar products for Sườn cừu -->
+    <div class="similar-products" id="similar-products-suoncuu">
+      <h2>Sản phẩm tương tự</h2>
+      <div class="similar-grid">
+        <a href="popup.html#duicuu" class="similar-item">
+          <img src="https://images.unsplash.com/photo-1608877907149-a206d75ba011?q=80&w=1374&auto=format&fit=crop" alt="Đùi cừu">
+          <div class="similar-info">
+            <div class="similar-name">Đùi cừu</div>
+            <div class="similar-price">$12.99/pound</div>
+          </div>
+        </a>
+        <a href="popup.html#thanlungcuu" class="similar-item">
+          <img src="https://images.unsplash.com/photo-1603360946369-dc9bb6258143?q=80&w=1470&auto=format&fit=crop" alt="Thăn lưng cừu">
+          <div class="similar-info">
+            <div class="similar-name">Thăn lưng cừu</div>
+            <div class="similar-price">$16.99/pound</div>
+          </div>
+        </a>
+      </div>
+    </div>
+    
+    <!-- Thăn lưng cừu product detail -->
+    <div id="thanlungcuu" class="product-detail">
+      <div class="product-image">
+        <img src="https://images.unsplash.com/photo-1603360946369-dc9bb6258143?q=80&w=1470&auto=format&fit=crop" alt="Thăn lưng cừu" class="main-image">
+      </div>
+      <div class="product-info">
+        <div class="product-category">Meat</div>
+        <h1 class="product-title">Thăn lưng cừu</h1>
+        <div class="product-rating">⭐⭐⭐⭐⭐ <span>(4.8)</span></div>
+        <div class="product-price">$16.99/pound</div>
+        
+        <div class="product-description">
+          <p>Thăn lưng cừu là phần thịt thượng hạng và mềm nhất của cừu, với vân mỡ đẹp tạo độ mềm ngọt khi chế biến. Đây là một lựa chọn hoàn hảo cho các món ăn cao cấp.</p>
+        </div>
+        
+        <div class="product-specs">
+          <h3>Thông số sản phẩm</h3>
+          <div class="spec-item">
+            <div class="spec-label">Nguồn gốc:</div>
+            <div class="spec-value">Nhập khẩu New Zealand</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Bảo quản:</div>
+            <div class="spec-value">2°C đến 4°C</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Hạn sử dụng:</div>
+            <div class="spec-value">7 ngày kể từ ngày sản xuất</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Hướng dẫn sử dụng:</div>
+            <div class="spec-value">Chế biến kỹ trước khi sử dụng</div>
+          </div>
+        </div>
+        
+        <form class="add-to-cart-form" action="cart.html" method="get">
+          <input type="hidden" name="product" value="thanlungcuu">
+          <div class="quantity-selector">
+            <span>Số lượng:</span>
+            <div class="quantity-value">1</div>
+          </div>
+          <button class="add-to-cart">Thêm vào giỏ hàng</button>
+        </form>
+      </div>
+    </div>
+    <!-- Similar products for Thăn lưng cừu -->
+    <div class="similar-products" id="similar-products-thanlungcuu">
+      <h2>Sản phẩm tương tự</h2>
+      <div class="similar-grid">
+        <a href="popup.html#duicuu" class="similar-item">
+          <img src="https://images.unsplash.com/photo-1608877907149-a206d75ba011?q=80&w=1374&auto=format&fit=crop" alt="Đùi cừu">
+          <div class="similar-info">
+            <div class="similar-name">Đùi cừu</div>
+            <div class="similar-price">$12.99/pound</div>
+          </div>
+        </a>
+        <a href="popup.html#suoncuu" class="similar-item">
+          <img src="https://images.unsplash.com/photo-1628268909376-e8c28097e8b6?q=80&w=1470&auto=format&fit=crop" alt="Sườn cừu">
+          <div class="similar-info">
+            <div class="similar-name">Sườn cừu</div>
+            <div class="similar-price">$14.99/pound</div>
+          </div>
+        </a>
+      </div>
+    </div>
+    
+    <!-- Thịt ức bò product detail -->
+    <div id="thitucbo" class="product-detail">
+      <div class="product-image">
+        <img src="https://images.unsplash.com/photo-1600180758890-6b94519a8ba6?q=80&w=1470&auto=format&fit=crop" alt="Thịt ức bò" class="main-image">
+      </div>
+      <div class="product-info">
+        <div class="product-category">Meat</div>
+        <h1 class="product-title">Thịt ức bò</h1>
+        <div class="product-rating">⭐⭐⭐⭐ <span>(4.4)</span></div>
+        <div class="product-price">$11.99/pound</div>
+        
+        <div class="product-description">
+          <p>Thịt ức bò là phần thịt nạc, ít mỡ và giàu protein. Đặc biệt phù hợp cho các thực đơn ăn kiêng và người tập thể thao. Vị thịt đậm đà, thích hợp cho nhiều cách chế biến.</p>
+        </div>
+        
+        <div class="product-specs">
+          <h3>Thông số sản phẩm</h3>
+          <div class="spec-item">
+            <div class="spec-label">Nguồn gốc:</div>
+            <div class="spec-value">Nhập khẩu</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Bảo quản:</div>
+            <div class="spec-value">2°C đến 4°C</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Hạn sử dụng:</div>
+            <div class="spec-value">7 ngày kể từ ngày sản xuất</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Hướng dẫn sử dụng:</div>
+            <div class="spec-value">Chế biến kỹ trước khi sử dụng</div>
+          </div>
+        </div>
+        
+        <form class="add-to-cart-form" action="cart.html" method="get">
+          <input type="hidden" name="product" value="thitucbo">
+          <div class="quantity-selector">
+            <span>Số lượng:</span>
+            <div class="quantity-value">1</div>
+          </div>
+          <button class="add-to-cart">Thêm vào giỏ hàng</button>
+        </form>
+      </div>
+    </div>
+    <!-- Similar products for Thịt ức bò -->
+    <div class="similar-products" id="similar-products-thitucbo">
+      <h2>Sản phẩm tương tự</h2>
+      <div class="similar-grid">
+        <a href="popup.html#thanbo" class="similar-item">
+          <img src="https://images.unsplash.com/photo-1613454320447-98affd88f197?q=80&w=1470&auto=format&fit=crop" alt="Phần thăn bò">
+          <div class="similar-info">
+            <div class="similar-name">Phần thăn bò</div>
+            <div class="similar-price">$15.50/pound</div>
+          </div>
+        </a>
+        <a href="popup.html#thitvaibo" class="similar-item">
+          <img src="https://images.unsplash.com/photo-1551198297-094dd118827b?q=80&w=1470&auto=format&fit=crop" alt="Thịt vai bò">
+          <div class="similar-info">
+            <div class="similar-name">Thịt vai bò</div>
+            <div class="similar-price">$13.49/pound</div>
+          </div>
+        </a>
+      </div>
+    </div>
+    
+    <!-- Nho xanh Hàn Quốc product detail -->
+    <div id="nhoxanh" class="product-detail">
+      <div class="product-image">
+        <img src="https://images.unsplash.com/photo-1537640538966-79f369143f8f?q=80&w=1473&auto=format&fit=crop" alt="Nho xanh Hàn Quốc" class="main-image">
+      </div>
+      <div class="product-info">
+        <div class="product-category">Fruits</div>
+        <h1 class="product-title">Nho xanh Hàn Quốc</h1>
+        <div class="product-rating">⭐⭐⭐⭐⭐ <span>(4.6)</span></div>
+        <div class="product-price">$3.99/pound</div>
+        
+        <div class="product-description">
+          <p>Nho xanh Hàn Quốc là giống nho cao cấp, quả to tròn đều, vỏ mỏng, ruột giòn ngọt và không hạt. Nho giàu vitamin và khoáng chất, tốt cho sức khỏe và làm đẹp da.</p>
+        </div>
+        
+        <div class="product-specs">
+          <h3>Thông số sản phẩm</h3>
+          <div class="spec-item">
+            <div class="spec-label">Nguồn gốc:</div>
+            <div class="spec-value">Nhập khẩu Hàn Quốc</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Bảo quản:</div>
+            <div class="spec-value">5°C đến 10°C</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Hạn sử dụng:</div>
+            <div class="spec-value">7-10 ngày ở nhiệt độ mát</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Hướng dẫn sử dụng:</div>
+            <div class="spec-value">Rửa sạch trước khi ăn</div>
+          </div>
+        </div>
+        
+        <form class="add-to-cart-form" action="cart.html" method="get">
+          <input type="hidden" name="product" value="nhoxanh">
+          <div class="quantity-selector">
+            <span>Số lượng:</span>
+            <div class="quantity-value">1</div>
+          </div>
+          <button class="add-to-cart">Thêm vào giỏ hàng</button>
+        </form>
+      </div>
+    </div>
+    <!-- Similar products for Nho xanh Hàn Quốc -->
+    <div class="similar-products" id="similar-products-nhoxanh">
+      <h2>Sản phẩm tương tự</h2>
+      <div class="similar-grid">
+        <a href="popup.html#dautay" class="similar-item">
+          <img src="https://images.unsplash.com/photo-1464965911861-746a04b4bca6?q=80&w=1470&auto=format&fit=crop" alt="Dâu tây Sơn La">
+          <div class="similar-info">
+            <div class="similar-name">Dâu tây Sơn La</div>
+            <div class="similar-price">$4.99/pound</div>
+          </div>
+        </a>
+      </div>
+    </div>
+    
+    <!-- Thịt vai product detail -->
+    <div id="thitvai" class="product-detail">
+      <div class="product-image">
+        <img src="https://images.unsplash.com/photo-1547050605-2f267cd78ffa?q=80&w=1470&auto=format&fit=crop" alt="Thịt vai" class="main-image">
+      </div>
+      <div class="product-info">
+        <div class="product-category">Meat</div>
+        <h1 class="product-title">Thịt vai</h1>
+        <div class="product-rating">⭐⭐⭐⭐ <span>(4.3)</span></div>
+        <div class="product-price">$10.50/pound</div>
+        
+        <div class="product-description">
+          <p>Thịt vai là phần thịt có cơ và gân mềm, hương vị đậm đà và thích hợp cho các món hầm, ninh hoặc nấu chín lâu. Phần thịt này còn giàu dinh dưỡng và có giá thành hợp lý.</p>
+        </div>
+        
+        <div class="product-specs">
+          <h3>Thông số sản phẩm</h3>
+          <div class="spec-item">
+            <div class="spec-label">Nguồn gốc:</div>
+            <div class="spec-value">Trong nước</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Bảo quản:</div>
+            <div class="spec-value">2°C đến 4°C</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Hạn sử dụng:</div>
+            <div class="spec-value">7 ngày kể từ ngày sản xuất</div>
+          </div>
+          <div class="spec-item">
+            <div class="spec-label">Hướng dẫn sử dụng:</div>
+            <div class="spec-value">Chế biến kỹ trước khi sử dụng</div>
+          </div>
+        </div>
+        
+        <form class="add-to-cart-form" action="cart.html" method="get">
+          <input type="hidden" name="product" value="thitvai">
+          <div class="quantity-selector">
+            <span>Số lượng:</span>
+            <div class="quantity-value">1</div>
+          </div>
+          <button class="add-to-cart">Thêm vào giỏ hàng</button>
+        </form>
+      </div>
+    </div>
+    <!-- Similar products for Thịt vai -->
+    <div class="similar-products" id="similar-products-thitvai">
+      <h2>Sản phẩm tương tự</h2>
+      <div class="similar-grid">
+        <a href="popup.html#thitvaibo" class="similar-item">
+          <img src="https://images.unsplash.com/photo-1551198297-094dd118827b?q=80&w=1470&auto=format&fit=crop" alt="Thịt vai bò">
+          <div class="similar-info">
+            <div class="similar-name">Thịt vai bò</div>
+            <div class="similar-price">$13.49/pound</div>
+          </div>
+        </a>
+      </div>
+    </div>
+    
+    <!-- Thịt vai bò product detail -->
+    <div id="thitvaibo" class="product-detail">
+      <div class="product-image">
+        <img src="https://images.unsplash.com/photo-1551198297-094dd118827b?q=80&w=1470&auto
