@@ -1,93 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Group 8 Market</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <script src="drawer.js" defer></script>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Group 8 Market</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <script src="drawer.js" defer></script>
 </head>
+
 <body>
-    <div class="mobile-overlay"></div>
-    <div class="mobile-drawer">
-        <div class="drawer-header">
-            <div class="logo">
-                <img src="C:\Lập trình Web\Midterm\Ảnh\ảnh 8 market logo.jpg" alt="8 Market Logo">
-            </div>
-            <button id="drawer-close" class="drawer-close">
-                <i class="fas fa-times"></i>
-            </button>
-        </div>
-        <div class="drawer-content">
-            <div class="drawer-nav">
-                <a href="#" class="active">Home</a>
-                <a href="#">Special Offers</a>
-                <a href="#">Substainability</a>
-                <a href="latest_news.html">Lastest News</a>
-                <a href="#">About Us</a>
-                <a href="cusreview.html">Customer Services</a>
-            </div>
-            <div class="drawer-actions">
-                <a href="#"><i class="fas fa-user"></i> Sign In</a>
-                <a href="#"><i class="fas fa-exchange-alt"></i> Compare</a>
-                <a href="#"><i class="fas fa-heart"></i> Wishlist</a>
-                <a href="#"><i class="fas fa-shopping-cart"></i> Cart</a>
-                <a href="#"><i class="fas fa-phone-alt"></i> +84 123 456 789</a>
-            </div>
-        </div>
+  <div class="mobile-overlay"></div>
+  <div class="mobile-drawer">
+    <div class="drawer-header">
+      <div class="logo">
+        <img src="C:\Lập trình Web\Midterm\Ảnh\ảnh 8 market logo.jpg" alt="8 Market Logo">
+      </div>
+      <button id="drawer-close" class="drawer-close">
+        <i class="fas fa-times"></i>
+      </button>
     </div>
-    
-    <header class="header">
-        <div class="container">
-            <button id="drawer-toggle" class="drawer-toggle">
-                <i class="fas fa-bars"></i>
-            </button>
-            <div class="logo">
-                <img src="C:\Lập trình Web\Midterm\Ảnh\ảnh 8 market logo.jpg" alt="8 Market Logo">
-            </div>
-            <div class="search-box">
-                <input type="text" placeholder="Search For Products">
-                <i class="fas fa-search"></i>
-            </div>
-            <div class="user-actions">
-                <a href="#"><i class="fas fa-user"></i> Sign In</a>
-                <a href="#"><i class="fas fa-exchange-alt"></i></a>
-                <a href="#"><i class="fas fa-heart"></i></a>
-                <a href="#"><i class="fas fa-shopping-cart"></i></a>
-                <a href="#"><i class="fas fa-phone-alt"></i> +84 123 456 789</a>
-            </div>
+    <div class="drawer-content">
+      <div class="drawer-nav">
+        <a href="#" class="active">Home</a>
+        <a href="#">Special Offers</a>
+        <a href="#">Substainability</a>
+        <a href="latest_news.html">Lastest News</a>
+        <a href="#">About Us</a>
+        <a href="cusreview.html">Customer Services</a>
+      </div>
+      <div class="drawer-actions">
+        <a href="#"><i class="fas fa-user"></i> Sign In</a>
+        <a href="#"><i class="fas fa-exchange-alt"></i> Compare</a>
+        <a href="#"><i class="fas fa-heart"></i> Wishlist</a>
+        <a href="#"><i class="fas fa-shopping-cart"></i> Cart</a>
+        <a href="#"><i class="fas fa-phone-alt"></i> +84 123 456 789</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container">
+      <button id="drawer-toggle" class="drawer-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="logo">
+        <img src="C:\Lập trình Web\Midterm\Ảnh\ảnh 8 market logo.jpg" alt="8 Market Logo">
+      </div>
+      <div class="search-box">
+        <input type="text" placeholder="Search For Products">
+        <i class="fas fa-search"></i>
+      </div>
+      <div class="user-actions">
+        <a href="#"><i class="fas fa-user"></i> Sign In</a>
+        <a href="#"><i class="fas fa-exchange-alt"></i></a>
+        <a href="#"><i class="fas fa-heart"></i></a>
+        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+        <a href="#"><i class="fas fa-phone-alt"></i> +84 123 456 789</a>
+      </div>
+    </div>
+    <nav class="nav" id="main-nav">
+      <div class="container">
+        <a href="#" class="active">Home</a>
+        <a href="#">Special Offers</a>
+        <a href="#">Substainability</a>
+        <a href="latest_news.html">Lastest New</a>
+        <a href="#">About Us</a>
+        <a href="cusreview.html">Customer Services</a>
+      </div>
+    </nav>
+  </header>
+  <main class="main">
+    <div class="container">
+      <div class="content">
+        <img src="C:\Lập trình Web\Midterm\Ảnh\ảnh 8 market logo.jpg" alt="8 Market Logo" class="logo-main">
+        <div class="imported">
+          <span class="green-bold">100%:</span>
+          <span class="white-bold">Genuine imported</span>
         </div>
-        <nav class="nav" id="main-nav">
-            <div class="container">
-                <a href="#" class="active">Home</a>
-                <a href="#">Special Offers</a>
-                <a href="#">Substainability</a>
-                <a href="latest_news.html">Lastest New</a>
-                <a href="#">About Us</a>
-                <a href="cusreview.html">Customer Services</a>
-            </div>
-        </nav>
-    </header>
-    <main class="main">
-        <div class="container">
-            <div class="content">
-                <img src="C:\Lập trình Web\Midterm\Ảnh\ảnh 8 market logo.jpg" alt="8 Market Logo" class="logo-main">
-                <div class="imported">
-                    <span class="green-bold">100%:</span>
-                    <span class="white-bold">Genuine imported</span>
-                </div>
-                <h2>Group 8 Market</h2>
-                <p class="italic">"Europe in Every Meal – Gourmet Delights at Your Doorstep!"</p>
-                <a href="page1.html" class="shop-now">Shop Now <i class="fas fa-arrow-right"></i></a>
-            </div>
-            <img src="C:\Lập trình Web\Midterm\Ảnh\giaodien.jpg" alt="Food Image" class="full-screen-image">
-        </div>
-    </main>
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Group 8 Market. All rights reserved.</p>
-        </div>
-    </footer>
+        <h2>Group 8 Market</h2>
+        <p class="italic">"Europe in Every Meal – Gourmet Delights at Your Doorstep!"</p>
+        <a href="page1.html" class="shop-now">Shop Now <i class="fas fa-arrow-right"></i></a>
+      </div>
+      <img src="C:\Lập trình Web\Midterm\Ảnh\giaodien.jpg" alt="Food Image" class="full-screen-image">
+    </div>
+
+  </main>
+
 </body>
+<footer style="background-color: #3CB371; color: white; padding: 20px 0; text-align: left;">
+  <div style="width: 80%; margin: auto; overflow: hidden; display: flex; justify-content: space-between;">
+    <div style="flex: 1; margin-right: 20px;">
+      <h3 style="border-bottom: 1px solid rgba(255, 255, 255, 0.3); padding-bottom: 5px; margin-bottom: 10px;">8market
+      </h3>
+      <p style="margin: 0;">"Europe in Every Meal - Gourmet Delights at Your Doorstep!"</p>
+      <div style="margin-top: 10px;">
+        <a href="#x" style="display: inline-block; margin-right: 10px; color: white;">
+          <img src="C:\Lập trình Web\Midterm\Ảnh\x.png" alt="#x" width="23px" height="30px">
+        </a>
+        <a href="#in" style="display: inline-block; margin-right: 10px; color: white;">
+          <img src="C:\Lập trình Web\Midterm\Ảnh\in.png" alt="#in" width="23px" height="30px">
+        </a>
+        <a href="#ig" style="display: inline-block; margin-right: 10px; color: white;">
+          <img src="C:\Lập trình Web\Midterm\Ảnh\ig.png" alt="#ig" width="23px" height="30px">
+        </a>
+        <a href="#yt" style="display: inline-block; margin-right: 10px; color: white;">
+          <img src="C:\Lập trình Web\Midterm\Ảnh\yt.png" alt="#yt" width="23px" height="30px">
+        </a>
+        <a href="#fb" style="display: inline-block; margin-right: 10px; color: white;">
+          <img src="C:\Lập trình Web\Midterm\Ảnh\fb.png" alt="#fb" width="23px" height="30px">
+        </a>
+      </div>
+    </div>
+    <div style="flex: 1; margin-right: 20px;">
+      <h3 style="border-bottom: 1px solid rgba(255, 255, 255, 0.3); padding-bottom: 5px; margin-bottom: 10px;">Useful
+        Links</h3>
+      <ul style="list-style: none; padding: 0;">
+        <li style="margin-bottom: 5px;"><a href="#" style="color: white; text-decoration: none;">Home</a></li>
+        <li style="margin-bottom: 5px;"><a href="#" style="color: white; text-decoration: none;">About Us</a></li>
+        <li style="margin-bottom: 5px;"><a href="#" style="color: white; text-decoration: none;">Services</a></li>
+      </ul>
+    </div>
+    <div style="flex: 1; margin-right: 20px;">
+      <h3 style="border-bottom: 1px solid rgba(255, 255, 255, 0.3); padding-bottom: 5px; margin-bottom: 10px;">Help &
+        Support</h3>
+      <ul style="list-style: none; padding: 0;">
+        <li style="margin-bottom: 5px;"><a href="#" style="color: white; text-decoration: none;">Contact Us</a></li>
+        <li style="margin-bottom: 5px;"><a href="#" style="color: white; text-decoration: none;">FAQs</a></li>
+        <li style="margin-bottom: 5px;"><a href="#" style="color: white; text-decoration: none;">Terms & Conditions</a>
+        </li>
+        <li style="margin-bottom: 5px;"><a href="#" style="color: white; text-decoration: none;">Privacy Policy</a></li>
+      </ul>
+    </div>
+    <div style="flex: 1;">
+      <h3 style="border-bottom: 1px solid rgba(255, 255, 255, 0.3); padding-bottom: 5px; margin-bottom: 10px;">Contact Us</h3>
+      <p style="margin: 0; margin-bottom: 5px;">0123 456 789</p>
+      <p style="margin: 0; margin-bottom: 5px;">group8_met4@hsb.edu.vn</p>
+      <p style="margin: 0;">
+        <img src="C:\Lập trình Web\Midterm\Ảnh\paypal.png" alt="PayPal"
+          style="width: 38.34px; height: 22.32px; margin-right: 10px;">
+        <img src="C:\Lập trình Web\Midterm\Ảnh\visa.png" alt="Visa"
+          style="width: 38.34px; height: 22.32px; margin-right: 10px;">
+        <img src="C:\Lập trình Web\Midterm\Ảnh\mastercard.png" alt="Mastercard"
+          style="width: 38.34px; height: 22.32px;">
+      </p>
+    </div>
+  </div>
+  <div style="text-align: center; padding-top: 20px; border-top: 1px solid rgba(255, 255, 255, 0.3); margin-top: 20px;">
+    <p style="margin: 0;">Copyright © 8market2025. All Rights Reserved.</p>
+  </div>
+</footer>
+
 </html>
