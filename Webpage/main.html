@@ -4,14 +4,48 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Group 8 Market</title>
-    <link rel="stylesheet" href="stylemain.css">
-    <link rel="stylesheet" href="stylforios.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="drawer.js" defer></script>
 </head>
 <body>
+    <div class="mobile-overlay"></div>
+    <div class="mobile-drawer">
+        <div class="drawer-header">
+            <div class="logo">
+                <img src="C:\Lập trình Web\Midterm\Ảnh\ảnh 8 market logo.jpg" alt="8 Market Logo">
+            </div>
+            <button id="drawer-close" class="drawer-close">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="drawer-content">
+            <div class="drawer-nav">
+                <a href="#" class="active">Home</a>
+                <a href="#">Special Offers</a>
+                <a href="#">Substainability</a>
+                <a href="latest_news.html">Lastest News</a>
+                <a href="#">About Us</a>
+                <a href="cusreview.html">Customer Services</a>
+            </div>
+            <div class="drawer-actions">
+                <a href="#"><i class="fas fa-user"></i> Sign In</a>
+                <a href="#"><i class="fas fa-exchange-alt"></i> Compare</a>
+                <a href="#"><i class="fas fa-heart"></i> Wishlist</a>
+                <a href="#"><i class="fas fa-shopping-cart"></i> Cart</a>
+                <a href="#"><i class="fas fa-phone-alt"></i> +84 123 456 789</a>
+            </div>
+        </div>
+    </div>
+    
     <header class="header">
         <div class="container">
+            <button id="drawer-toggle" class="drawer-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
             <div class="logo">
-                </div>
+                <img src="C:\Lập trình Web\Midterm\Ảnh\ảnh 8 market logo.jpg" alt="8 Market Logo">
+            </div>
             <div class="search-box">
                 <input type="text" placeholder="Search For Products">
                 <i class="fas fa-search"></i>
@@ -24,7 +58,7 @@
                 <a href="#"><i class="fas fa-phone-alt"></i> +84 123 456 789</a>
             </div>
         </div>
-        <nav class="nav">
+        <nav class="nav" id="main-nav">
             <div class="container">
                 <a href="#" class="active">Home</a>
                 <a href="#">Special Offers</a>

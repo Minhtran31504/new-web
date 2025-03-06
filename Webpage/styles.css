@@ -1,0 +1,426 @@
+/* Reset and Base Styles */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: white;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Header */
+.header {
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem 1.5rem;
+}
+
+.header .logo img {
+    max-height: 60px;
+}
+
+.header .search-box {
+    flex-grow: 1;
+    margin: 0 1.5rem;
+    position: relative;
+}
+
+.header .search-box input {
+    width: 100%;
+    border: 1px solid #e2e8f0;
+    border-radius: 2rem;
+    padding: 0.5rem 1rem 0.5rem 2.5rem;
+}
+
+.header .search-box i {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #a0aec0;
+}
+
+.header .user-actions a {
+    color: #343a40;
+    margin-left: 1rem;
+    text-decoration: none;
+}
+
+/* Navigation */
+.nav {
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 1.5rem;
+    text-align: center;
+}
+
+.nav a {
+    color: #343a40;
+    margin: 0 1rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav a:hover {
+    color: #218838;
+}
+
+.nav a.active {
+    color: #38a169;
+}
+
+/* Drawer Toggle Button - Hidden by default */
+.drawer-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #343a40;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+/* Mobile Drawer */
+.mobile-drawer {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 280px;
+    height: 100%;
+    background-color: #f8f9fa;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: left 0.3s ease;
+    overflow-y: auto;
+}
+
+.drawer-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.drawer-header .logo img {
+    height: 40px;
+}
+
+.drawer-close {
+    background: none;
+    border: none;
+    color: #343a40;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.drawer-content {
+    padding: 1rem;
+}
+
+.drawer-nav {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.drawer-nav a {
+    color: #343a40;
+    padding: 0.75rem 0;
+    text-decoration: none;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.drawer-nav a.active {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.drawer-actions {
+    display: flex;
+    flex-direction: column;
+}
+
+.drawer-actions a {
+    color: #343a40;
+    padding: 0.75rem 0;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.drawer-actions a i {
+    margin-right: 0.5rem;
+    width: 20px;
+    text-align: center;
+}
+
+.mobile-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+/* Drawer Open State */
+body.drawer-open .mobile-drawer {
+    left: 0;
+}
+
+body.drawer-open .mobile-overlay {
+    display: block;
+}
+
+body.drawer-open {
+    overflow: hidden;
+}
+
+/* Main Content */
+.main {
+    padding: 2rem 0;
+}
+
+.main .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main .content {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.main .logo-main {
+    max-height: 50px;
+    margin-bottom: 1rem;
+}
+
+.main h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.main p {
+    font-style: italic;
+    margin-bottom: 1.5rem;
+}
+
+.main .shop-now {
+    background-color: #28a745;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.main .shop-now:hover {
+    background-color: #1e7e34;
+    transform: scale(1.05);
+}
+
+.main .food-image {
+    max-width: 100%;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Full Screen Image */
+.full-screen-image {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Imported Section */
+.imported {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.green-bold {
+    color: #28a745;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.white-bold {
+    color: white;
+    font-weight: bold;
+}
+
+/* Desktop View */
+@media (min-width: 1024px) {
+    .main .container {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .main .content {
+        text-align: left;
+        margin-right: 2rem;
+    }
+
+    .main .food-image {
+        max-width: 700px;
+    }
+}
+
+/* Tablet View */
+@media (max-width: 1023px) {
+    .container {
+        width: 95%;
+    }
+    
+    .header .search-box {
+        margin: 0 1rem;
+    }
+    
+    .main h2 {
+        font-size: 2.2rem;
+    }
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header {
+        padding: 0.8rem 1rem;
+    }
+
+    .header .container {
+        flex-direction: row;
+        justify-content: flex-start; /* Align to the start */
+        width: 100%;
+    }
+
+    .drawer-toggle {
+        display: block;
+        order: -1;
+        font-size: 1.8rem; /* Make hamburger icon slightly bigger */
+        margin-right: auto; /* Push everything else to the right */
+    }
+
+    .header .logo,
+    .header .search-box,
+    .header .user-actions,
+    .nav {
+        display: none; /* Hide all these elements on mobile */
+    }
+
+    /* Keep main content styles */
+    .main {
+        padding: 1.5rem 0;
+    }
+
+    .main .content {
+        text-align: center;
+        margin-right: 0;
+    }
+
+    .main h2 {
+        font-size: 2rem;
+    }
+
+    .main .shop-now {
+        padding: 0.6rem 1.2rem;
+        font-size: 14px;
+    }
+
+    /* Make sure mobile drawer is properly styled */
+    .mobile-drawer {
+        width: 80%; /* Wider drawer on small screens */
+        max-width: 300px;
+    }
+
+    .drawer-header {
+        justify-content: space-between;
+        padding: 1rem;
+    }
+
+    .drawer-header .logo {
+        display: block; /* Show logo in drawer */
+    }
+
+    .drawer-close {
+        font-size: 1.5rem;
+    }
+}
+
+/* Small Mobile View */
+@media (max-width: 480px) {
+    .header {
+        padding: 0.6rem 0.8rem;
+    }
+
+    .drawer-toggle {
+        font-size: 1.5rem; /* Slightly smaller on very small screens */
+    }
+
+    .header .user-actions a {
+        font-size: 12px;
+    }
+
+    .nav a {
+        margin: 0.3rem;
+        font-size: 12px;
+    }
+
+    .main h2 {
+        font-size: 1.6rem;
+    }
+
+    .main p {
+        font-size: 14px;
+    }
+
+    .main .shop-now {
+        padding: 0.5rem 1rem;
+        font-size: 13px;
+    }
+
+    .header .search-box input {
+        padding: 0.5rem 1rem;
+        font-size: 14px;
+    }
+
+    .header .container {
+        padding: 0.5rem 0;
+    }
+}

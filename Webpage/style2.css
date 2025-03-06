@@ -5,9 +5,48 @@ body {
     background-color: #f0f0f0;
 }
 
-/* Media query cho màn hình nhỏ */
-@media screen and (max-width: 768px) {
+/* Enhanced Media Queries */
+/* Small phones */
+@media screen and (max-width: 480px) {
+  header {
+    font-size: 18px;
+    margin: 8px 5px;
+    padding: 10px;
+  }
+  
+  .product-grid1 {
+    grid-template-columns: 1fr !important;
+    gap: 15px;
+    padding: 15px;
+  }
+  
+  .product {
+    height: auto;
+    min-height: 250px;
+  }
+  
+  .product-detail {
+    flex-direction: column;
+    padding: 15px;
+  }
+  
+  .product-image, .product-info {
+    max-width: 100%;
+  }
+  
+  .features {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .features div {
+    width: 100%;
+    padding: 8px 0;
+  }
+}
 
+/* Medium phones and small tablets */
+@media screen and (min-width: 481px) and (max-width: 768px) {
   header {
     font-size: 20px;
     margin: 10px 5px;
@@ -21,7 +60,8 @@ body {
   aside {
     width: 100%;
     margin-right: 0;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
+    max-width: 100%;
   }
 
   .menu-item {
@@ -31,29 +71,61 @@ body {
 
   aside img {
     margin-top: 10px;
+    max-height: 200px;
   }
 
-  .product-grid {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    max-height: none; 
-    padding-right: 0;
+  .product-grid1 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 15px;
   }
 
   .product {
-    height: auto; 
-    padding: 10px;
+    height: auto;
+    min-height: 280px;
   }
 
   .features {
-    flex-direction: column;
+    flex-wrap: wrap;
     padding: 10px;
   }
 
   .features div {
+    width: 45%;
     margin-bottom: 10px;
+  }
+  
+  .product-detail {
+    flex-direction: column;
+  }
+  
+  .product-image {
+    max-width: 100%;
+  }
+  
+  .main-image {
+    height: 300px !important;
   }
 }
 
+/* Tablets and small laptops */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .product-grid1 {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+  
+  aside {
+    width: 30%;
+  }
+  
+  .product-detail {
+    gap: 20px;
+    padding: 20px;
+  }
+}
+
+/* Rest of existing CSS */
 /* Header */
 header {
     text-align: center;
@@ -101,7 +173,7 @@ main {
 
 aside {
     width: 25%;
-    padding: 20px;
+    /* padding: 20px; */
     max-width: 280px;
     margin: 0 auto;
 }
@@ -134,7 +206,7 @@ aside img {
 .product-grid1 {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(5, minmax(200px, 1fr)); 
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
     gap: 20px;
     padding: 20px;
     overflow-y: auto; 
@@ -153,6 +225,7 @@ aside img {
     align-items: center;
     justify-content: space-between;
     height: 300px;
+    width: 200px;
 }
 
 .product:hover {
@@ -641,4 +714,35 @@ img {
 
 .quantity-btn.plus {
     border-radius: 0 4px 4px 0;
+}
+
+/* Enhanced responsive styles for product detail */
+@media screen and (max-width: 768px) {
+  .quantity-controls {
+    flex-wrap: nowrap;
+  }
+  
+  .action-buttons {
+    flex-direction: column;
+  }
+  
+  .action-buttons .btn {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .thumbnail {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .price-display {
+    flex-wrap: wrap;
+  }
+}
+
+/* Fix images for responsive views */
+img {
+    max-width: 100%;
+    height: auto;
 }

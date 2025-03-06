@@ -2,7 +2,7 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Cửa Hàng Thịt</title>
     <link rel="stylesheet" href="style2.css">
 </head>
@@ -192,5 +192,35 @@
         <div>🚚 Delivery in 5 hours</div>
         <div>🔒 Payment Secure</div>
     </section>
+
+    <!-- Add responsive JavaScript -->
+    <script>
+        // Function to check screen size and adjust layout if needed
+        function checkScreenSize() {
+            const sidebar = document.getElementById('sidebar');
+            const productContainer = document.getElementById('product-container');
+            
+            if (window.innerWidth <= 768) {
+                // Optimize image loading on mobile
+                const images = document.querySelectorAll('img');
+                images.forEach(img => {
+                    if (!img.dataset.src) {
+                        img.dataset.src = img.src;
+                        if (img.classList.contains('product-image') || img.classList.contains('main-image')) {
+                            // Keep product detail images at full quality
+                        } else {
+                            // Use smaller images for product grid on mobile
+                            img.src = img.src.replace('.png', '-small.png');
+                        }
+                    }
+                });
+            }
+        }
+
+        // Run on page load
+        window.addEventListener('load', checkScreenSize);
+        // Run when window is resized
+        window.addEventListener('resize', checkScreenSize);
+    </script>
 </body>
 </html>
